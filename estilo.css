@@ -33,6 +33,7 @@ body{
     }
     .incompatible{
         display: none;
+        position: fixed;
     }
     .password{
         position: absolute;
