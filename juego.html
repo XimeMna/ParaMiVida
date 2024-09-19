@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Outfit&display=swap" rel="stylesheet">
+    <title>Feliz Cumple Corazón</title>
+    <link rel="stylesheet" href="juego.css">
+</head>
+<body>
+    <div class="incompatible">
+        <img src="Imagenes/gato.gif">
+        <h1>No compatible con este dispositivo.</h1>
+    </div>
+
+    <div class="pregunta1" id="pg1">
+    <div class="cabecera" id="cabecera">
+        <a href="menu.html">
+        <button class="siguiente">
+            <img src="Imagenes/flecha.png">
+        </button></a>
+        <label>Juego Preguntas</label>
+    </div>
+    <label class="quien">Quién es probable a...</label>
+    <label class="quien_">caerse por estar distraída</label>
+    <img src="Imagenes/foto1.png" class="foto">
+    <div class="contenedor-botones">
+        <button class="opcion"  onclick="p1_op1()">TU</button>
+        <button class="opcion1"  onclick="p1_op2()">YO</button>
+    </div>
+    </div>
+    <div id="p1_1" style="display: none;">
+        <div class="cabecera" id="cabecera">
+            <label>Pregunta 1</label>
+        </div>
+        <div class="texto">apoco si, si esa eres tu</div>
+        <img src="Imagenes/gato-desconfiado.gif" class="stiker">
+        <button class="sig" onclick="preg2()">
+            <img src="Imagenes/flecha.png">
+        </button>
+    </div>
+    <div id="p1_2" style="display: none;">
+        <div class="cabecera" id="cabecera">
+            <label>Pregunta 1</label>
+        </div>
+        <div class="texto">si es cierto</div>
+        <img src="Imagenes/gatoriendo.jpg" class="stiker">
+        <button class="sig" onclick="preg2()">
+            <img src="Imagenes/flecha.png">
+        </button>
+    </div>
+
+
+
+
+    <div class="pregunta2" style="display: none;" id="pg2">
+    <div class="cabecera" id="cabecera">
+        <a href="menu.html">
+        <button class="siguiente">
+            <img src="Imagenes/flecha.png">
+        </button></a>
+        <label>Juego Preguntas</label>
+    </div>
+    <label class="quien">Quién es probable a...</label>
+    <label class="quien_">empujar una puerta que dice "jale"</label>
+    <img src="Imagenes/foto1.png" class="foto">
+    <div class="contenedor-botones">
+        <button class="opcion" onclick="p2_op1()">TU</button>
+        <button class="opcion1" onclick="p2_op2()">YO</button>
+    </div>
+    </div>
+
+    <div id="p2_1" style="display: none;">
+        <div class="cabecera" id="cabecera">
+            <label>Pregunta 2</label>
+        </div>
+        <div class="texto">si hay probabilidad pero tu me ganas</div>
+        <img src="Imagenes/lero.jpg" class="stiker">
+        <button class="sig" onclick="preg3()">
+            <img src="Imagenes/flecha.png">
+        </button>
+    </div>
+    <div id="p2_2" style="display: none;">
+        <div class="cabecera" id="cabecera">
+            <label>Pregunta 2</label>
+        </div>
+        <div class="texto">si te creo mi amor</div>
+        <img src="Imagenes/chin.jpg" class="stiker">
+        <button class="sig" onclick="preg3()">
+            <img src="Imagenes/flecha.png">
+        </button>
+    </div>
+
+
+
+
+
+    <div class="pregunta3" style="display: none;" id="pg3">
+    <div class="cabecera" id="cabecera">
+        <a href="menu.html">
+        <button class="siguiente">
+            <img src="Imagenes/flecha.png">
+        </button></a>
+        <label>Juego Preguntas</label>
+    </div>
+    <label class="quien">Quién es probable a...</label>
+    <label class="quien_">asustarse por algo paranormal</label>
+    <img src="Imagenes/foto1.png" class="foto">
+    <div class="contenedor-botones">
+        <button class="opcion" onclick="p3_op1()">TU</button>
+        <button class="opcion1" onclick="p3_op2()">YO</button>
+    </div>
+    </div>
+
+    <div id="p3_1" style="display: none;">
+        <div class="cabecera" id="cabecera">
+            <label>Pregunta 3</label>
+        </div>
+        <div class="texto">poquito nomas</div>
+        <img src="Imagenes/miedo.jpg" class="stiker">
+        <button class="sig" onclick="preg4()">
+            <img src="Imagenes/flecha.png">
+        </button>
+    </div>
+    <div id="p3_2" style="display: none;">
+        <div class="cabecera" id="cabecera">
+            <label>Pregunta 3</label>
+        </div>
+        <div class="texto">iiihh lero lero</div>
+        <img src="Imagenes/iih.jpg" class="stiker">
+        <button class="sig" onclick="preg4()">
+            <img src="Imagenes/flecha.png">
+        </button>
+    </div>
+
+
+
+
+    <div class="pregunta4" style="display: none;" id="pg4">
+    <div class="cabecera" id="cabecera">
+        <a href="menu.html">
+        <button class="siguiente">
+            <img src="Imagenes/flecha.png">
+        </button></a>
+        <label>Juego Preguntas</label>
+    </div>
+    <label class="quien">Quién es probable a...</label>
+    <label class="quien_">que salga en rateros del oxxo</label>
+    <img src="Imagenes/foto1.png" class="foto">
+    <div class="contenedor-botones">
+        <button class="opcion" onclick="p4_op1()">TU</button>
+        <button class="opcion1" onclick="p4_op2()">YO</button>
+    </div>
+    </div>
+
+    <div id="p4_1" style="display: none;">
+        <div class="cabecera" id="cabecera">
+            <label>Pregunta 4</label>
+        </div>
+        <div class="texto">siempre salgo ahí</div>
+        <img src="Imagenes/cholo.jpg" class="stiker">
+        <button class="sig" onclick="preg5()">
+            <img src="Imagenes/flecha.png">
+        </button>
+    </div>
+    <div id="p4_2" style="display: none;">
+        <div class="cabecera" id="cabecera">
+            <label>Pregunta 4</label>
+        </div>
+        <div class="texto">si hay probabilidad</div>
+        <img src="Imagenes/sorprendido.gif" class="stiker">
+        <button class="sig" onclick="preg5()">
+            <img src="Imagenes/flecha.png">
+        </button>
+    </div>
+
+
+    <div class="pregunta5" style="display: none;" id="pg5">
+    <div class="cabecera" id="cabecera">
+        <a href="menu.html">
+        <button class="siguiente">
+            <img src="Imagenes/flecha.png">
+        </button></a>
+        <label>Juego Preguntas</label>
+    </div>
+    <label class="quien">Quién es probable a...</label>
+    <label class="quien_">enojarse por perde en el UNO</label>
+    <img src="Imagenes/foto1.png" class="foto">
+    <div class="contenedor-botones">
+        <button class="opcion" onclick="p5_op1()">TU</button>
+        <button class="opcion1" onclick="p5_op2()">YO</button>
+    </div>
+    </div>
+
+    <div id="p5_1" style="display: none;">
+        <div class="cabecera" id="cabecera">
+            <label>Pregunta 5</label>
+        </div>
+        <div class="texto">y q o q</div>
+        <img src="Imagenes/majadero.gif" class="stiker">
+        <button class="sig" onclick="inicio()">
+            <img src="Imagenes/flecha.png">
+        </button>
+    </div>
+    <div id="p5_2" style="display: none;">
+        <div class="cabecera" id="cabecera">
+            <label>Pregunta 5</label>
+        </div>
+        <div class="texto">SIEMPREE señorita enojona</div>
+        <img src="Imagenes/enojon.gif" class="stiker">
+        <button class="sig" onclick="inicio()">
+            <img src="Imagenes/flecha.png">
+        </button>
+    </div>
+
+    <script src="juego.js"></script>
+</body>
+</html>

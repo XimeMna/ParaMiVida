@@ -1,0 +1,250 @@
+/* font-family: "Concert One", system-ui;
+font-family: "Outfit", system-ui; */
+body{
+    margin: 0;
+    padding: 0;
+
+}
+.incompatible{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #f8f3fc;
+    font-family: "Outfit", system-ui;
+    color: #041428;
+    text-align: center;
+}
+.incompatible img{
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%,-50%);
+    width: 45vh;
+}
+.incompatible h1{
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%,-50%);
+}
+
+@media only screen and (max-width: 768px){
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: #866BE0;
+    }
+    .incompatible{
+        display: none;
+    }
+    .cabecera{
+        position: absolute;
+        width: 100%;
+        height: 10%;
+        background-color: #fff;
+        border-radius: 0 0 40px 40px;
+        -webkit-box-shadow: 0px 8px 5px 0px rgba(0,0,0,0.21);
+        -moz-box-shadow: 0px 8px 5px 0px rgba(0,0,0,0.21);
+        box-shadow: 0px 8px 5px 0px rgba(0,0,0,0.21);
+    }
+    .siguiente{
+        width: 6vh;
+        height: 6vh;
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        border-radius: 12px;
+        background-color: #883EC9;
+        border: none;
+    }
+    .siguiente img{
+        width: 100%;
+        filter: invert(100);
+    }
+    .cabecera label{
+        position: absolute;
+        font-size: 3vh;
+        font-family: "Concert One", system-ui;
+        color: #522670;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .fotos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Crea dos columnas iguales */
+        position: absolute;
+        gap: 50px 0px;
+        left: 50%;
+        top: 15%;
+        transform: translate(-50%);
+        justify-items: center; /* Centra los elementos dentro de cada columna */
+    }
+
+
+    .marco {
+        position: relative; 
+        width: 25vh; /* Ajusta el ancho según tu necesidad */
+        text-align: center;
+
+    }
+    
+    .marco img {
+        width: 100%; /* Asegura que las imágenes llenen el contenedor */
+    }
+    
+    .marco .marco_c {
+        width: 100%;
+    }
+    
+    .marco .canciones {
+        position: absolute;
+        top: 50%; /* Centra verticalmente en el contenedor */
+        left: 50%; /* Centra horizontalmente en el contenedor */
+        transform: translate(-50%, -55%); /* Ajusta para que la imagen se centre completamente */
+        width: 70%;
+        height: auto;
+        z-index: -1; /* Asegura que la imagen 'canciones' esté sobre 'marco_c' */
+    }
+    
+    .marco label {
+        position: absolute;
+        font-size: 2vh;
+        color: #522670;
+        font-family: "Concert One", system-ui;
+        top: 21vh; 
+        
+    }
+
+    .cuadro{
+        background-color: #883EC9;
+        position: absolute;
+        width: 90%;
+        height: 85%;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 40px;
+    }
+
+    
+
+    .texto{
+        position: absolute;
+        width: 35vh;
+        height: 22vh;
+        background-color: #fff;
+        top: 33%;
+        left: 50%;
+        transform: translate(-50%);
+        border-radius: 20px;
+        font-family: "Outfit", system-ui;
+        display: grid;
+        place-items: center; /* Centra tanto vertical como horizontalmente */
+        text-align: center; /* Centra el texto dentro del párrafo */
+        grid-template-rows: auto auto; /* Distribuye la imagen y el texto en dos filas */
+        
+    }
+    .texto label{
+        font-size: 2.5vh;
+        color: #522670;
+        padding: 10px 10px 0px 10px;
+    }
+    .texto img {
+        width: 6vh;
+    }
+
+    .letra{
+        position: absolute;
+        width: 22vh;
+        left: 50%;
+        transform: translate(-50%);
+        top: 64%;
+        border-radius: 20px;
+    }
+
+    
+    iframe{
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 35vh;
+        height: 25vh;
+    }
+    .branca{
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+    }
+    .porti{
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+    }
+    .ruleta{
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+    }
+    .mary{
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+    }
+    .real{
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+    }
+    .solotu{
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+    }
+    .haycosas{
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+    }
+    .loquetuquieras{
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+    }
+    .vieil{
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+    }
+    .hastalamuerte{
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+    }
+
+    
+    
+        
+}

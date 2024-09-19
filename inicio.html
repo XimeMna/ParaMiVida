@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Outfit&display=swap" rel="stylesheet">
+    <title>Feliz Cumple Corazón</title>
+    <link rel="stylesheet" href="inicio.css">
+</head>
+<body>
+
+    <div class="incompatible">
+        <img src="Imagenes/gato.gif">
+        <h1>No compatible con este dispositivo.</h1>
+    </div>
+    <div class="cabecera">
+        <img src="Imagenes/feliz.gif">
+    </div>
+
+    <img src="Imagenes/mano.gif" class="mano" id="mano">
+
+    <div class="cuadro" id="cuadro">
+        <div class="adelante">
+            <h2>En este día especial, celebro no solo tu cumpleaños, 
+                sino también la suerte que tengo de tenerte en mi vida. ¡Feliz cumpleaños, mi amor!</h2>
+            <img src="Imagenes/love-and-romance-1.png">
+        </div>
+        <div class="atras">
+            <img src="Imagenes/corazon.png">
+            <div class="calendario">
+                <div class="header">Lun</div>
+                <div class="header">Mar</div>
+                <div class="header">Mié</div>
+                <div class="header">Jue</div>
+                <div class="header">Vie</div>
+                <div class="header">Sáb</div>
+                <div class="header">Dom</div>
+        
+                <!-- Vacíos para ajustar la posición del primer día del mes -->
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="day">1</div>
+        
+                <div class="day">2</div>
+                <div class="day">3</div>
+                <div class="day">4</div>
+                <div class="day">5</div>
+                <div class="day">6</div>
+                <div class="day">7</div>
+        
+                <div class="day">8</div>
+                <div class="day">9</div>
+                <div class="day">10</div>
+                <div class="day">11</div>
+                <div class="day">12</div>
+                <div class="day">13</div>
+                <div class="day">14</div>
+        
+                <div class="day">15</div>
+                <div class="day">16</div>
+                <div class="day">17</div>
+                <div class="day">18</div>
+                <div class="day">19</div>
+                <div class="day">20</div>
+                <div class="day">21</div>
+        
+                <div class="day">22</div>
+                <div class="day">23</div>
+                <div class="day">24</div>
+                <div class="day">25</div>
+                <div class="day">26</div>
+                <div class="day">27</div>
+                <div class="day">28</div>
+        
+                <div class="day">29</div>
+                <div class="day">30</div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+            </div>
+        </div>
+    </div>
+
+    <a href="menu.html" id="siguiente">
+    <button class="siguiente">
+        <img src="Imagenes/flecha.png">
+    </button>
+    </a>
+
+    <script>
+        const cuadro = document.getElementById('cuadro');
+
+        function handleTouchStart() {
+            cuadro.classList.toggle('rotar');
+        }
+        cuadro.addEventListener('click', handleTouchStart);
+        cuadro.addEventListener('touchstart', handleTouchStart);
+
+        var mano =document.getElementById ("mano");
+        setTimeout(function() {
+            mano.style.display ="none";
+        }, 5000);
+
+    </script>
+</body>
+</html>

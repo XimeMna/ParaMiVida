@@ -1,0 +1,152 @@
+/* font-family: "Concert One", system-ui; */
+body{
+    margin: 0;
+    padding: 0;
+}
+.incompatible{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #f8f3fc;
+    font-family: "Outfit", system-ui;
+    color: #041428;
+    text-align: center;
+}
+.incompatible img{
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%,-50%);
+    width: 45vh;
+}
+.incompatible h1{
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%,-50%);
+}
+
+@media only screen and (max-width: 768px){
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .incompatible{
+        display: none;
+    }
+    .password{
+        position: absolute;
+        top: 42%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #866BE0;
+        width: 35vh;
+        height: 34vh;
+        border-radius: 25px;
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.2);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.2);
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.2);
+    }
+    button{
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #7F3CAD;
+        width: 14vh;
+        height: 5vh;
+        border: none; 
+        border-radius: 15px;
+        color: #fff;
+        font-size: 5vw;
+        font-family: "Outfit", system-ui;
+        -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.2);
+        box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.2);
+    }
+    img{
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 22vh;
+    }
+    .password label{
+        font-family: "Concert One", system-ui;
+        position: absolute;
+        left: 50%;
+        top: 28%;
+        transform: translate(-50%,-50%);
+        color: #fff;
+        font-size: 13vw;
+    }
+    .password input{
+        font-family: "Concert One", system-ui;
+        width: 5vh;
+        height: 6.5vh;
+        display: inline-block;
+        margin-right: 15px;
+        border-radius: 12%;
+        border: none;
+        color: #fff;
+        background-color: #7F3CAD;
+        font-size: 12vw;
+        text-align: center;
+    }
+    .password input:nth-child(4){
+        margin-right: 0px;
+    }
+
+    .cont_num{
+        position: absolute;
+        left: 50%;
+        top: 68%;
+        transform: translate(-50%,-50%);
+        width: max-content;
+    }
+
+    @keyframes error-flash {
+        0% { background-color: #866BE0; }
+        50% { background-color: #FF6B6B; }
+        100% { background-color: #866BE0; }
+    }
+    
+    .error-flash {
+        animation: error-flash 0.5s ease-in-out;
+    }
+
+    .fondo{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #866BE0;
+        z-index: 1;
+        display: none;
+    }
+    @keyframes circle-in-center {
+        from {
+            clip-path: circle(0%);
+        }
+        to {
+            clip-path: circle(125%);
+        }
+    }
+    
+    @keyframes circle-out-center {
+        from {
+          clip-path: circle(120%);
+        }
+        to {
+          clip-path: circle(0%);
+        }
+      }
+
+    .fondo img{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 30vh;
+    }
+}
+

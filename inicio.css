@@ -1,0 +1,170 @@
+/* font-family: "Concert One", system-ui;
+font-family: "Outfit", system-ui; */
+body{
+    margin: 0;
+    padding: 0;
+}
+.incompatible{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #f8f3fc;
+    font-family: "Outfit", system-ui;
+    color: #041428;
+    text-align: center;
+}
+.incompatible img{
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%,-50%);
+    width: 45vh;
+}
+.incompatible h1{
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%,-50%);
+}
+
+@media only screen and (max-width: 768px){
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .incompatible{
+        display: none;
+    }
+    .cabecera{
+        width: 100%;
+        height: 40vh;
+        background-color: #866BE0;
+        position: absolute;
+        border-radius: 0px 0px 10% 10%;
+        text-align: center;
+        -webkit-box-shadow: 0px 8px 5px 0px rgba(0,0,0,0.21);
+        -moz-box-shadow: 0px 8px 5px 0px rgba(0,0,0,0.21);
+        box-shadow: 0px 8px 5px 0px rgba(0,0,0,0.21);
+    }
+    .cabecera img{
+       width: 80%;
+    }
+
+
+
+    .cuadro{
+        width: 40vh;
+        height:30vh;
+        transform-style: preserve-3d;
+        transition: transform 1.2s;
+        background-color: #FFA4D1;
+        border-radius: 10%;
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-family: "Outfit", system-ui;
+        color: #fff;
+        -webkit-box-shadow: 8px 8px 5px 0px rgba(0,0,0,0.21);
+        -moz-box-shadow: 8px 8px 5px 0px rgba(0,0,0,0.21);
+        box-shadow: 8px 8px 5px 0px rgba(0,0,0,0.21);
+        
+    }
+    .cuadro h2{
+       margin: 30px 10px 0 10px;
+       position: absolute;
+       text-align: center;
+       font-size: 5vw;
+    }
+    .cuadro img{
+        width: 10vh;
+        position: absolute;
+        left: 50%;
+        top: 80%;
+        transform: translate(-50%,-50%);
+    }
+    .cuadro.rotar{
+        transform: translate(-50%, -50%) rotateY(180deg);
+    }
+    .adelante, .atras {
+        width: 100%;
+        height: 100%;
+        border-radius: 20%;
+        position: absolute;
+        backface-visibility: hidden;
+    }
+    
+    .atras {
+        transform: rotateY(180deg);
+    }
+
+    .siguiente{
+        width: 6vh;
+        height: 6vh;
+        position: absolute;
+        bottom: 5%;
+        right: 5%;
+        border-radius: 12px;
+        background-color: #883EC9;
+        border: none;
+    }
+    .siguiente img{
+        filter: invert(100);
+        transform: rotate(180deg);
+    }
+
+    .calendario {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        width: 80%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .calendario div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 35px;
+        font-size: 16px;
+        color: #fff;
+    }
+
+    .calendario .header {
+        opacity: 75%;
+        color: #866BE0;
+        font-weight: bold;
+        text-transform: uppercase;
+
+    }
+
+
+    .calendario .day:nth-child(7n+1) {
+        color: #866BE0; /* Sábados */
+    }
+
+    .calendario .day:nth-child(7n) {
+        color: #883EC9; /* Domingos */
+    }
+
+    .atras img{
+        position: absolute;
+        top: 64%;
+        width: 4vh;
+    }
+
+    .mano{
+        border-radius: 15px;
+        position: absolute;
+        left: 50%;
+        top: 88%;
+        transform: translate(-50%,-50%);
+        width: 10vh;
+    }
+    button img{
+        width: 100%;
+    }
+   
+}

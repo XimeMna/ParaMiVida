@@ -1,0 +1,144 @@
+/* font-family: "Concert One", system-ui;
+font-family: "Outfit", system-ui; */
+body{
+    margin: 0;
+    padding: 0;
+}
+.incompatible{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #f8f3fc;
+    font-family: "Outfit", system-ui;
+    color: #041428;
+    text-align: center;
+}
+.incompatible img{
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%,-50%);
+    width: 45vh;
+}
+.incompatible h1{
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%,-50%);
+}
+
+@media only screen and (max-width: 768px){
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: #866BE0;
+    }
+    .incompatible{
+        display: none;
+    }
+    .cabecera{
+        position: absolute;
+        width: 100%;
+        height: 10%;
+        background-color: #fff;
+        border-radius: 0 0 40px 40px;
+        -webkit-box-shadow: 0px 8px 5px 0px rgba(0,0,0,0.21);
+        -moz-box-shadow: 0px 8px 5px 0px rgba(0,0,0,0.21);
+        box-shadow: 0px 8px 5px 0px rgba(0,0,0,0.21);
+    }
+    .siguiente{
+        width: 6vh;
+        height: 6vh;
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        border-radius: 12px;
+        background-color: #883EC9;
+        border: none;
+    }
+    .siguiente img{
+        width: 100%;
+        filter: invert(100);
+    }
+    .cabecera label{
+        position: absolute;
+        font-size: 3vh;
+        font-family: "Concert One", system-ui;
+        color: #522670;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .fotos {
+        display: flex;
+        flex-direction: column; /* Alinea los elementos verticalmente */
+        gap: 10px; /* Espacio entre los elementos */
+        position: absolute;
+        left: 50%;
+        top: 10%;
+        transform: translate(-50%);
+        align-items: center; /* Centra los elementos horizontalmente */
+    }
+    
+    .marco {
+        position: relative; 
+        width: 35vh;
+        
+    }
+    
+    .marco .marco_f {
+        width: 100%;
+    }
+    
+    .marco .recuerdos {
+        position: absolute;
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        width: 80%;
+        height: auto;
+        z-index: -1; 
+        
+    }
+    
+    .frase {
+        font-size: 2vh; 
+        color: #fff;
+        text-align: center;
+        background-color: #883EC9;
+        width: 30vh;
+        height: 16vh;
+        border-radius: 20px;
+        font-family: "Outfit", system-ui;
+        display: grid;
+        place-items: center; /* Centra tanto vertical como horizontalmente */
+        text-align: center; /* Centra el texto dentro del párrafo */
+        grid-template-rows: auto auto; /* Distribuye la imagen y el texto en dos filas */
+        -webkit-box-shadow: 8px 8px 5px 0px rgba(0,0,0,0.21);
+        -moz-box-shadow: 8px 8px 5px 0px rgba(0,0,0,0.21);
+        box-shadow: 8px 8px 5px 0px rgba(0,0,0,0.21);
+    }
+    
+    .frase img {
+        width: 7vh;
+    }
+    
+    .frase label {
+        padding: 10px 10px 0px 10px;
+    }
+    
+    .arriba{
+        filter: invert(1);
+        transform: rotate(180deg);
+        width: 8vh;
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+}
